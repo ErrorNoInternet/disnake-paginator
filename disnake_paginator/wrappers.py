@@ -45,4 +45,3 @@ class MessageInteractionWrapper:
 
     async def edit_original_message(self, content=None, embed=None, view=None):
         await self.response.edit_message(content=content, embed=embed, view=view)
-

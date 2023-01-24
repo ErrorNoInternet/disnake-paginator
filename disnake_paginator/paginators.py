@@ -124,4 +124,3 @@ class ButtonPaginator:
             await interaction.response.send_message(embed=self.embeds[self.current_page-1], view=self.view(interaction), ephemeral=ephemeral)
         else:
             await interaction.edit_original_message(embed=self.embeds[self.current_page-1], view=self.view(interaction))
-
