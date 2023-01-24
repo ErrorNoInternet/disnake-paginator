@@ -40,5 +40,7 @@ async def aaa_command(inter):
 `timeout` = The amount of seconds before the paginator stops working\
 `button_style` = The style of the buttons on the paginator (red, gray, green, etc)\
 `invalid_user_text` = The function that will be called when another user tries to use the paginator
+`(x)_button_emoji` = The emoji displayed on the (x) button (for example `first_button_emoji`)
+`(x)_button_label` = The label (text) displayed on the (x) button (for example `next_button_label`)
 
 <sub>If you would like to modify this repository (including its code) in your own project, please be sure to credit!</sub>
