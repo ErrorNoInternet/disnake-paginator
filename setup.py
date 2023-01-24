@@ -7,7 +7,7 @@ readme_file.close()
 setuptools.setup(
     name = 'disnake_paginator',
     packages = ['disnake_paginator'],
-    version = '1.0.7',
+    version = '1.0.8',
     license = 'MIT',
     description = "This is a module that contains paginators for disnake",
     long_description = readme_data,
@@ -25,6 +25,8 @@ setuptools.setup(
         'Programming Language :: Python :: 3',
         'Programming Language :: Python :: 3.8',
         'Programming Language :: Python :: 3.9',
+        'Programming Language :: Python :: 3.10',
+        'Programming Language :: Python :: 3.11',
     ],
 )
 
