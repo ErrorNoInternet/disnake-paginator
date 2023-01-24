@@ -67,10 +67,12 @@ class ButtonPaginator:
                 return await super().on_timeout()
 
             def update_page(this):
+                index = 0
                 for button in this.children:
-                    if button.label:
+                    if index == 2:
                         if button.label.strip() != "":
                             button.label = f"{self.current_page}/{len(self.embeds)}"
+                    index += 1
 
             @disnake.ui.button(emoji=self.first_button_emoji, label=self.first_button_label, style=self.button_style, disabled=True if len(self.embeds) == 1 else False)
             async def first_button(this, _, button_interaction):
