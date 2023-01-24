@@ -7,7 +7,7 @@ pip install disnake-paginator
 ```
 
 ## Examples
-Slash command example
+Interaction example
 ```py
 async def ping_command(inter):
 	paginator = disnake_paginator.ButtonPaginator(title="Pong", segments=["Hello", "World"], color=0x00ff00)
