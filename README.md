@@ -12,7 +12,6 @@ Slash command example
 async def ping_command(inter):
 	paginator = disnake_paginator.ButtonPaginator(title="Pong", segments=["Hello", "World"], color=0x00ff00)
 	await paginator.start(inter)
-
 ```
 
 `on_message` example
@@ -33,13 +32,13 @@ async def aaa_command(inter):
 
 ## Arguments
 `title` = The title of the embed\
-`segments` = The pages of the paginator (supports `str` and `disnake.Embed`)\
-`color` = The color of the embed\
+`segments` = The contents (pages) of the paginator (supports `str` and `disnake.Embed`)\
+`color` = The color of all the embeds\
 `prefix` = The prefix of every page in the embed\
 `suffix` = The suffix of every page in the embed\
-`target_page` = The page that the paginator will display when created\
-`timeout` = The amount of seconds after the paginator will stop working\
-`button_style` = The style of the buttons on the paginator\
+`target_page` = The page that the paginator will display when sent\
+`timeout` = The amount of seconds before the paginator stops working\
+`button_style` = The style of the buttons on the paginator (red, gray, green, etc)\
 `invalid_user_text` = The function that will be called when another user tries to use the paginator
 
 <sub>If you would like to modify this repository (including its code) in your own project, please be sure to credit!</sub>
