@@ -1,5 +1,5 @@
 # disnake-paginator
-A module containing paginators for disnake
+A Python library containing paginators for disnake
 
 ## Installation
 ```
